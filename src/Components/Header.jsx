@@ -7,7 +7,7 @@ const HeaderContainer = styled.header`
   background-color: #26547c;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centre horizontalement le contenu principal */
+  justify-content: center; 
   padding: 10px;
   color: white;
   position: fixed;

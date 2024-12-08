@@ -4,7 +4,7 @@ function ChecklistCard({ checklist, onEdit, onDelete }) {
   return (
     <div
       style={{
-        backgroundColor: "#FFD166", // Carré jaune pour la checklist
+        backgroundColor: "#FFD166", 
         padding: "50px",
         borderRadius: "10px",
         width: "200px",
@@ -23,7 +23,7 @@ function ChecklistCard({ checklist, onEdit, onDelete }) {
 
 // Styles
 const buttonStyle = {
-  backgroundColor: "#26547C", // Jaune pour sauvegarder
+  backgroundColor: "#26547C", 
   padding: "10px 20px",
   border: "none",
   borderRadius: "5px",
@@ -33,7 +33,7 @@ const buttonStyle = {
 };
 
 const deleteButtonStyle = {
-  backgroundColor: "#EF476F", // Rouge pour le bouton Delete
+  backgroundColor: "#EF476F", 
   padding: "10px 20px",
   border: "none",
   borderRadius: "5px",

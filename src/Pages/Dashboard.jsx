@@ -44,7 +44,7 @@ function Dashboard() {
             <div
               key={checklist.id}
               style={{
-                backgroundColor: "#FFCC66", 
+                backgroundColor: "#FFD166", 
                 padding: "20px",
                 borderRadius: "8px",
                 boxShadow: "0px 2px 4px rgba(0,0,0,0.2)",
@@ -112,7 +112,7 @@ function Dashboard() {
         <button
           onClick={handleAddChecklist}
           style={{
-            backgroundColor: "#FFCC66", 
+            backgroundColor: "#FFD166", 
             color: "#26547C", 
             padding: "10px 20px",
             fontSize: "16px",

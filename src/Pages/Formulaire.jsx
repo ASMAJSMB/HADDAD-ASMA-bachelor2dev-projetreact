@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import Header from "../Components/Header"; // Importation du Header
-import Footer from "../Components/Footer"; // Importation du Footer
+import Header from "../Components/Header"; 
+import Footer from "../Components/Footer"; 
 
-// Conteneur principal
+
 const MainContainer = styled.div`
-  margin-top: 60px; /* Pour éviter le chevauchement avec le header fixé */
+  margin-top: 60px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ const MainContainer = styled.div`
   min-height: 100vh;
 `;
 
-// Boutons en haut
+
 const TopButtons = styled.div`
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ const TopButtons = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #ff5e78;
+  background-color: #EF476F;
   color: white;
   border: none;
   border-radius: 5px;
@@ -34,13 +34,13 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #e04d65;
+    background-color: #EF476F;
   }
 `;
 
-// Formulaire principal
+
 const FormContainer = styled.div`
-  background-color: #ffc857;
+  background-color: #FFD166;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -73,7 +73,7 @@ const Field = styled.div`
   }
 `;
 
-// Liste des tâches
+
 const TaskRow = styled.div`
   display: flex;
   align-items: center;
@@ -92,14 +92,14 @@ const TaskRow = styled.div`
 const ModifyButton = styled(Button)`
   padding: 5px 10px;
   font-size: 14px;
-  background-color: #26547c;
+  background-color: #26547C;
 
   &:hover {
-    background-color: #1f4569;
+    background-color: #26547C;
   }
 `;
 
-// Boutons en bas
+
 const BottomButtons = styled.div`
   display: flex;
   justify-content: space-between;
@@ -109,19 +109,19 @@ const BottomButtons = styled.div`
 `;
 
 function Formulaire() {
-  const [taskTitle, setTaskTitle] = useState(""); // Titre de la tâche
-  const [tasks, setTasks] = useState(["Task 1", "Task 2"]); // Liste des tâches
+  const [taskTitle, setTaskTitle] = useState(""); 
+  const [tasks, setTasks] = useState(["Task 1", "Task 2"]); 
   const navigate = useNavigate();
 
   const handleAddTask = () => {
     if (taskTitle) {
-      setTasks([...tasks, taskTitle]); // Ajouter une nouvelle tâche
-      setTaskTitle(""); // Réinitialiser l'entrée
+      setTasks([...tasks, taskTitle]); 
+      setTaskTitle(""); 
     }
   };
 
   const handleBack = () => {
-    navigate("/"); // Redirige vers le Dashboard
+    navigate("/"); 
   };
 
   return (

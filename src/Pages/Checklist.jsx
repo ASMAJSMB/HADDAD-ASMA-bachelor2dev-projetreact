@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Header from "../Components/Header"; // Importation du Header
-import Footer from "../Components/Footer"; // Importation du Footer
+import Header from "../Components/Header"; 
+import Footer from "../Components/Footer"; 
+
+
 
 function Checklist() {
-  const { id } = useParams(); // Récupère l'id de la checklist si elle existe
+  const { id } = useParams(); 
   const navigate = useNavigate();
 
-  // Exemple d'une checklist (si aucune donnée n'est récupérée)
+  
   const initialChecklist = {
     title: "New Checklist",
     description: "Description de la checklist",
@@ -17,13 +19,13 @@ function Checklist() {
   const [checklist, setChecklist] = useState(initialChecklist);
 
   const handleSave = () => {
-    // Sauvegarde de la checklist (envoie les données vers l'API ou autre système)
+    
     console.log("Checklist sauvegardée", checklist);
-    navigate("/"); // Redirige vers le Dashboard après avoir sauvegardé
+    navigate("/"); 
   };
 
   const handleBack = () => {
-    navigate("/"); // Retour au Dashboard
+    navigate("/"); 
   };
 
   const handleAddTask = () => {
@@ -49,7 +51,7 @@ function Checklist() {
 
       <div
         style={{
-          backgroundColor: "#FFD166", // Carré jaune pour la checklist
+          backgroundColor: "#FFD166", 
           padding: "20px",
           borderRadius: "10px",
           width: "80%",
@@ -81,7 +83,7 @@ function Checklist() {
             <div
               key={index}
               style={{
-                backgroundColor: "#FFEB99",
+                backgroundColor: "#FFD166",
                 padding: "15px",
                 borderRadius: "8px",
                 marginBottom: "15px",
@@ -136,39 +138,39 @@ const inputStyle = {
 };
 
 const addButtonStyle = {
-    backgroundColor: "#EF476F", // Rose pour ajouter une tâche
-    padding: "8px 15px", // Ajustement des marges pour un aspect plus fin
+    backgroundColor: "#EF476F", 
+    padding: "8px 15px", 
     border: "none",
-    borderRadius: "30px", // Bords arrondis pour un look moderne
+    borderRadius: "30px", 
     cursor: "pointer",
     color: "white",
     fontWeight: "bold",
     fontSize: "14px",
-    transition: "background-color 0.3s ease", // Effet de transition
+    transition: "background-color 0.3s ease", 
   };
   
   const saveButtonStyle = {
-    backgroundColor: "#118AB2", // Jaune pour sauvegarder
-    padding: "8px 15px", // Ajustement des marges pour un aspect plus fin
+    backgroundColor: "#26547C", 
+    padding: "8px 15px", 
     border: "none",
-    borderRadius: "30px", // Bords arrondis pour un look moderne
+    borderRadius: "30px", 
     cursor: "pointer",
-    color: "white", // Texte contrasté
+    color: "white", 
     fontWeight: "bold",
     fontSize: "14px",
-    transition: "background-color 0.3s ease", // Effet de transition
+    transition: "background-color 0.3s ease", 
   };
   
   const backButtonStyle = {
-    backgroundColor: "#118AB2", // Bleu pour le bouton Back
-    padding: "8px 15px", // Ajustement des marges pour un aspect plus fin
+    backgroundColor: "#26547C", 
+    padding: "8px 15px", 
     border: "none",
-    borderRadius: "30px", // Bords arrondis pour un look moderne
+    borderRadius: "30px", 
     cursor: "pointer",
     color: "white",
     fontWeight: "bold",
     fontSize: "14px",
-    transition: "background-color 0.3s ease", // Effet de transition
+    transition: "background-color 0.3s ease", 
   };
   
 
